@@ -2,13 +2,13 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def index(request):
-    return HttpResponse('<h4>Перевірка робити сайту</h4>')
+    return render(request, 'main/index.html')
 
 def about(request):
-    return HttpResponse('<h4>Сторінка про нас</h4>')
+    return render(request, 'main/about.html')
 
 def sweetheart(request):
-    return HttpResponse('<h1>Люблю тебе)</h1>')
+    return render(request, 'main/sweetheart.html')
 
 def test(request):
-    return HttpResponse('<h4>Тестова сторінка</h4>')
+    return render(request, 'main/test.html')
